@@ -20,14 +20,8 @@ public class ArrayListDemo {
         numbers.add(900);
         numbers.add(1000);
 
-        //used to show index num in loop
-        int y = 0;
-
         //enhanced for loop
-        for (int number : numbers) {
-            System.out.println("Index " + y + " :" + number);
-            y++;
-        }
+        loop(numbers);
 
         //get user input to append to arraylist
         Scanner sc = new Scanner(System.in);
@@ -37,12 +31,16 @@ public class ArrayListDemo {
         numbers.add(sc.nextInt());
 
         //reset index counter
-        y = 0;
-        for (int number : numbers) {
-            System.out.println("Index " + y + " :" + number);
-            y++;
-        }
+        loop(numbers);
 
+    }
+
+    static void loop(ArrayList<Integer> numbers) {
+        int x = 0;
+        for (int number : numbers) {
+            System.out.println("Index " + x + " :" + number);
+            x++;
+        }
     }
 
 }
