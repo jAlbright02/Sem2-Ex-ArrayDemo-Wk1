@@ -1,5 +1,7 @@
 package ie.atu;
 
+import java.util.Scanner;
+
 public class ArrayDemo {
 
     public static void main(String[] args) {
@@ -13,6 +15,14 @@ public class ArrayDemo {
             myArray[i] = 100 * (i+1);
             System.out.println(myArray[i]);
         }
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter value for array");
+        int userInput = sc.nextInt();
+
+        myArray[10] = userInput;
+
 
     }
 
