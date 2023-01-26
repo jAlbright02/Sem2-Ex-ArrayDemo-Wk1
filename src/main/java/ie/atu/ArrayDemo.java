@@ -19,9 +19,15 @@ public class ArrayDemo {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter value for array");
-        int userInput = sc.nextInt();
 
-        myArray[10] = userInput;
+        try {
+
+            int userInput = sc.nextInt();
+
+            myArray[10] = userInput;
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("You have exceeded your memory limit.");
+        }
 
 
     }
