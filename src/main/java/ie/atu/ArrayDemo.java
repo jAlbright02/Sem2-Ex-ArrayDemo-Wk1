@@ -29,7 +29,15 @@ public class ArrayDemo {
             System.out.println("You have exceeded your memory limit.");
         }
 
+        enhancedLoop(myArray);
 
+
+    }
+
+    static void enhancedLoop(int array[]) {
+        for (int x : array) {
+            System.out.println(x);
+        }
     }
 
 }
